@@ -1,0 +1,13 @@
+numberOfParents = 250
+childrenPerParent = 4
+snakesPerThread = 100  # delegating a certain amount of snake games over a certain number of threads will help the fitness calculation greatly
+boardSize = (10, 10)
+startingSize = 4
+maxSteps = 70
+topology = [32, 20, 12, 4]
+livesPerSnake = 3  # the amount of times a snake is allowed to reproduce (aka. how many generations it's allowed to go through)
+spbxChance = 0.5  # the chance of using spbx instead of sbx
+epsilon = 1  # the weights are randomized between ±epsilon
+eta = 100  # for the sbx; large eta makes the crossover more docile, a small eta makes the crossover more volatile
+mutationScale = 0.2  # the scale of mutation, decides how impactful the mutation is
+mutationRate = 0.05  # should reflect about 1-5 genes per individual
